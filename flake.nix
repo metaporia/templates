@@ -13,7 +13,7 @@
         description = "Rust dev shell with rust-overlay & flake-utils";
       };
 
-      bare-dev = {
+      bare = {
         path = ./bare;
         description = "Bare dev shell";
       };
