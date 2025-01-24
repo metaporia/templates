@@ -12,7 +12,7 @@
       devShell. x86_64-linux = pkgs.mkShell {
         buildInputs = with pkgs; [
           # runtime inputs
-          lua5_1
+          # lua5_1
           unzip
         ];
       };

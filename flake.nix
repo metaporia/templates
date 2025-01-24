@@ -13,7 +13,16 @@
         description = "Rust dev shell with rust-overlay & flake-utils";
       };
 
-    } // official-templates.templates;
+      bare-dev = {
+        path = ./bare;
+        description = "Bare dev shell";
+      };
+
+    }; 
+    # // official-templates.templates;
+
+    # run after initialization 
+    # nix flake update --override-input nixpkgs "github:nixos/nixpkgs/$(nixos-version --revision)"
 
   };
 }
